@@ -53,17 +53,16 @@
 
                 @foreach($value->childs as $key => $sub)
                 @foreach($sub->access as $key => $subaccess)
+                @if($subaccess->count() > 0)
+                @if($subaccess->id == \Illuminate\Support\Facades\Auth::user()->group_id && $subaccess->pivot->is_viewable == true)
                 <li class="menu-item {{$sub->name == $activeMenu->name ? 'active' : ''}}">
-                    @if($subaccess->count() > 0)
-                    @if($subaccess->id == \Illuminate\Support\Facades\Auth::user()->group_id && $subaccess->pivot->is_viewable == true)
                     <a class="menu-link" href="{{route("$sub->route_name")}}">
                         <i class="menu-icon tf-icons ti ti-menu-2"></i>
                         <div>{{$sub->name}}</div>
                     </a>
-                    @endif
-
-                    @endif
                 </li>
+                @endif
+                @endif
                 @endforeach
                 @endforeach
             </ul>
