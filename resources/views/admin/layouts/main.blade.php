@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="light-style layout-navbar-fixed layout-menu-fixed" dir="ltr" data-theme="theme-default" data-assets-path="../../assets/" data-template="vertical-menu-template">
+<html lang="en" class="light-style layout-navbar-fixed layout-menu-fixed" dir="ltr" data-theme="theme-default" data-assets-path="{{asset('vuexy/assets/')}}" data-template="vertical-menu-template">
 
 <head>
     <!-- Required Meta Tags Always Come First -->
@@ -47,6 +47,8 @@
     <link rel="stylesheet" href="{{asset('vuexy/assets/vendor/libs/tagify/tagify.css')}}" />
     <link rel="stylesheet" href="{{asset('vuexy/assets/vendor/libs/bootstrap-select/bootstrap-select.css')}}" />
     <link rel="stylesheet" href="{{asset('vuexy/assets/vendor/libs/typeahead-js/typeahead.css')}}" />
+    <link rel="stylesheet" href="{{asset('vuexy/assets/vendor/libs/animate-css/animate.css')}}" />
+    <link rel="stylesheet" href="{{asset('vuexy/assets/vendor/libs/sweetalert2/sweetalert2.css')}}" />
 
     <!-- Page CSS -->
 
@@ -145,6 +147,8 @@
     <script src="{{asset('vuexy/assets/vendor/libs/bloodhound/bloodhound.js')}}"></script>
     <script src="{{asset('vuexy/assets/vendor/libs/apex-charts/apexcharts.js')}}"></script>
     <script src="{{asset('vuexy/assets/vendor/libs/swiper/swiper.js')}}"></script>
+    <script src="{{asset('vuexy/assets/vendor/libs/sweetalert2/sweetalert2.js')}}"></script>
+    <script src="{{asset('vuexy/assets/js/extended-ui-sweetalert2.js')}}"></script>
     <!-- Flat Picker -->
     <script src="{{asset('vuexy/assets/vendor/libs/moment/moment.js')}}"></script>
     <script src="{{asset('vuexy/assets/vendor/libs/flatpickr/flatpickr.js')}}"></script>
@@ -164,7 +168,7 @@
 
     <script src="{{asset('lib/jquery-validation/js/jquery.validate.min.js')}}"></script>
     <script src="{{asset('lib/form/form-validation.js')}}"></script>
-    <script src="{{asset('lib/sweetalert2/sweetalert2.js')}}"></script>
+    <!-- <script src="{{asset('lib/sweetalert2/sweetalert2.js')}}"></script> -->
 
     <!-- JS Front -->
     <script src="{{asset('tables/js/datatable/jquery.dataTables.min.js')}}"></script>

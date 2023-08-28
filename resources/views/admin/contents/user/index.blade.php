@@ -44,6 +44,34 @@
         </div>
     </div>
 </div>
+<!-- <div class="card">
+    <div class="card-header">
+        <div class="row">
+            <div class="col-md-6">
+                <h4 class="card-title">{{$menu['breadcrumbs']->name}} Table</h4>
+            </div>
+            <div class="col-md-6">
+                @php
+                $current_path = \Request::route()->getName();
+                getPagesAccess($current_path);
+                @endphp
+            </div>
+        </div>
+    </div>
+    <div class="card-datatable text-nowrap">
+        <table id="contentTable" class="js-datatable table table-thead-bordered table-nowrap table-align-middle card-table table-striped table-hover">
+            <thead>
+                <tr class=" table100-head">
+                    <th width="3%" class="text-center">No</th>
+                    <th>Username</th>
+                    <th>Fullname</th>
+                    <th>Group</th>
+                    <th class="text-center">Action</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+</div> -->
 <!-- <div class="row">
     <div class="col-12">
         <div class="card">
@@ -261,6 +289,15 @@
 
                 $.post(url.submit, data, function(result) {
                     swalStatus(result, "myModal", '', table)
+                    // Swal.fire({
+                    //     title: "Success",
+                    //     text: "User is successfully Added.",
+                    //     type: "success",
+                    //     icon: 'success',
+                    // }).then(function() {
+                    //     // window.location.reload();
+                    //     tableReload(table)
+                    // });
                 });
             }
         });
