@@ -5,7 +5,7 @@
 ## About Larabase
 
 ## Whats Inside
-- Ubold Admin UI
+- Vuexy Admin UI
 - Boostrapt 5
 - Yajra Datatables (https://github.com/yajra/laravel-datatables)
 - Bootstrap Fileinput (https://github.com/kartik-v/bootstrap-fileinput)
@@ -15,7 +15,7 @@ Include simple Data Table (CRUD).
 
 | Feature | Status |
 | --- | --- |
-| Bootstrap Modern Admin Themes | OK |
+| Bootstrap Vuexy Themes | OK |
 | Auth Scaffolding | OK |
 | Roles & Permissions | OK |
 | Sweet Alert JS | OK |
@@ -30,7 +30,7 @@ Include simple Data Table (CRUD).
 ## Installation
 ### First clone or download this repository
 ```shell
-git clone https://github.com/denisuryadi26/larabaseV10-ubold.git
+git clone https://github.com/denisuryadi26/larabaseV10-vuexy.git
 ```
 
 After clone or download this repository, next step is install all dependency required by laravel and laravel-mix.
